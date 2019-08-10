@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather analysis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+      <nav class=" navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" ><Strong>Latitude</Strong></a>
+        
+          <div class="navbar-nav navbar-right">
+            <ul  class="navbar-nav" ></ul>
+                
+              <li class="nav-item dropdown active" >
+                <a class="nav-link dropdown-toggle" href="plots.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                  </div>
+              </li>
+                
+              <li class="nav-item active">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+                
+              <li class="nav-item active">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+
+            </ul>
+          </div> <!--navbar-nav navbar-right-->
+        </div> <!--container-fluid-->
+      </nav>
+
+      <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <div class="container" id="firstblock">
+              <h1>Latitude vs. Wind Speed</h1>    
+              <hr>
+                
+              <img src="Resources/assets/images/Fig4.png" width="600" height="400" >
+              <p>Most cities are situated at places where the speed of the wind is relatively less, which is below 15 mph. Although there are some outliers, it still is not direct relationship among the two.</p>
+            </div> <!--container div-->
+          </div> <!--col-md-8 div-->
+          
+        
+          <div class="col-sm-12 col-md-4"> 
+            <div class="container" id="secondblock">   
+              <h2 style="text-align:center">Visualizations</h2> 
+              <hr>
+              <a href="max_temp.html"> <img src = "Resources/assets/images/Fig1.png" width="150" height="150" align="left"></a>
+              <a href="humidity.html"> <img src = "Resources/assets/images/Fig2.png"width="150" height="150" align="right"></a>
+              <a href="cloudiness.html"> <img src = "Resources/assets/images/Fig3.png"width="150" height="150" align="left"></a>
+              <a href="wind_speed.html"> <img src = "Resources/assets/images/Fig4.png"width="150" height="150" align="right"></a>  
+            </div> <!--container div-->
+           </div><!--col-md-4 div-->
+          </div> <!--row div-->
+
+
+      <footer class = 'footer'>
+          <p>Data Science Bootcamp 2019</p>
+        </footer>
+      </body>
+    </html>
+    
+    
