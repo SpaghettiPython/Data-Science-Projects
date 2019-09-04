@@ -1,4 +1,4 @@
-# Mission to Mars
+# Mission to Mars - Will only work if all the requirements are installed...
 
 ![mission_to_mars](Images/mission_to_mars.png)
 
